@@ -16,6 +16,7 @@
 void test_default()
 {
     int x = 1;
+    (void)x;
 
     BOOST_ASSERT(1);
     BOOST_ASSERT(x);
@@ -34,6 +35,7 @@ void test_default()
 void test_disabled()
 {
     int x = 1;
+    (void)x;
 
     BOOST_ASSERT(1);
     BOOST_ASSERT(x);
