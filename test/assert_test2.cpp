@@ -35,6 +35,7 @@ void test_default()
 void test_default_ndebug()
 {
     int x = 1;
+    (void)x;
 
     BOOST_ASSERT( 1 );
     BOOST_ASSERT( x );
@@ -87,8 +88,10 @@ void test_debug_handler()
 void test_debug_handler_ndebug()
 {
     handler_invoked = 0;
+    (void)handler_invoked;
 
     int x = 1;
+    (void)x;
 
     BOOST_ASSERT( 1 );
     BOOST_ASSERT( x );
